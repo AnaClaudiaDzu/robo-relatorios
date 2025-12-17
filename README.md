@@ -108,16 +108,19 @@ Histórico de relatórios
 Atualização automática
 
 
-## 🚀 Download do Aplicativo
+🚀 Download do Aplicativo
 
-🔹 Linux:
-- `dist/robo_relatorios`
+Baixe os executáveis diretamente do GitHub Actions ou da seção **Releases**:
 
-🔹 Windows:
-- `dist/robo_relatorios.exe`
+- **Windows:** [Download .exe]( https://github.com/AnaClaudiaDzu/robo-relatorios/actions/runs/20317526735/artifacts/4904511117) 
+- **Linux:** [Download executável](https://github.com/AnaClaudiaDzu/robo-relatorios/actions/runs/20317526735/artifacts/4904491913)
 
-Basta baixar o arquivo e executar.
 
+> Basta clicar no arquivo e abrir o aplicativo. No Linux, você pode precisar dar permissão de execução:
+
+```bash
+chmod +x robo_relatorios
+./robo_relatorios
 
 
 👩‍💻 Autora
