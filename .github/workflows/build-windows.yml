@@ -1,0 +1,43 @@
+name: Build executables
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install --upgrade pip && pip install -r requirements.txt pyinstaller
+      - name: Build Windows executable
+        run: pyinstaller main.py --onefile --windowed --icon=assets/robo.ico --name robo_relatorios
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: robo-relatorios-windows
+          path: dist/robo_relatorios.exe
+
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install --upgrade pip && pip install -r requirements.txt pyinstaller
+      - name: Build Linux executable
+        run: pyinstaller main.py --onefile --windowed --icon=assets/robo.png --name robo_relatorios
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: robo-relatorios-linux
+          path: dist/robo_relatorios
