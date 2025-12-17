@@ -1,17 +1,15 @@
-name: Build Windows Executable
+name: Build executables
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-windows:
     runs-on: windows-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -21,14 +19,14 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pyinstaller pyqt5 pandas matplotlib reportlab
+          pip install -r requirements.txt pyinstaller
 
-      - name: Build executable
+      - name: Build Windows executable
         run: |
-          pyinstaller main.py --onefile --windowed --icon=assets/robo.ico --name robo_relatorios
+          pyinstaller main.py --onefile --windowed --icon=assets/robo.ico --name robo_relatorios --add-data "assets;assets"
 
-      - name: Upload executable
-        uses: actions/upload-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: robo_relatorios_windows
+          name: robo-relatorios-windows
           path: dist/robo_relatorios.exe
