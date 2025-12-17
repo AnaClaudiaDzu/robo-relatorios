@@ -112,8 +112,9 @@ Atualização automática
 
 Baixe os executáveis diretamente do GitHub Actions ou da seção **Releases**:
 
-- **Windows:** [Download .exe](https://github.com/AnaClaudiaDzu/robo-relatorios/suites/workflows/build.yml/artifacts)  
-- **Linux:** [Download executável](https://github.com/AnaClaudiaDzu/robo-relatorios/suites/workflows/build.yml/artifacts)
+- **Windows:** [Download .exe]( https://github.com/AnaClaudiaDzu/robo-relatorios/actions/runs/20317526735/artifacts/4904511117) 
+- **Linux:** [Download executável](https://github.com/AnaClaudiaDzu/robo-relatorios/actions/runs/20317526735/artifacts/4904491913)
+
 
 > Basta clicar no arquivo e abrir o aplicativo. No Linux, você pode precisar dar permissão de execução:
 
