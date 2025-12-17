@@ -10,14 +10,18 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.12"
+
       - name: Install dependencies
         run: pip install --upgrade pip && pip install -r requirements.txt pyinstaller
+
       - name: Build Windows executable
-        run: pyinstaller main.py --onefile --windowed --icon=assets/robo.ico --name robo_relatorios
+        run: pyinstaller main.py --onefile --windowed --icon=assets/robo.ico --name robo_relatorios --add-data "assets:assets"
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -28,14 +32,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.12"
+
       - name: Install dependencies
         run: pip install --upgrade pip && pip install -r requirements.txt pyinstaller
+
       - name: Build Linux executable
-        run: pyinstaller main.py --onefile --windowed --icon=assets/robo.png --name robo_relatorios
+        run: pyinstaller main.py --onefile --windowed --icon=assets/robo.png --name robo_relatorios --add-data "assets:assets"
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
