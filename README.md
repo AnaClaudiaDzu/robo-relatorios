@@ -112,8 +112,8 @@ Atualização automática
 
 Baixe os executáveis diretamente do GitHub Actions ou da seção **Releases**:
 
-- **Windows:** [Download .exe]( https://github.com/AnaClaudiaDzu/robo-relatorios/actions/runs/20317526735/artifacts/4904511117) 
-- **Linux:** [Download executável](https://github.com/AnaClaudiaDzu/robo-relatorios/actions/runs/20317526735/artifacts/4904491913)
+- **Windows:** [Download .exe](https://github.com/AnaClaudiaDzu/robo-relatorios/actions/runs/20318904868/artifacts/4905081996) 
+- **Linux:** [Download executável](https://github.com/AnaClaudiaDzu/robo-relatorios/actions/runs/20318904868/artifacts/4905061422)
 
 
 > Basta clicar no arquivo e abrir o aplicativo. No Linux, você pode precisar dar permissão de execução:
