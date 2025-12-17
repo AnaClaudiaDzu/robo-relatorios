@@ -6,7 +6,6 @@ O Robô de Relatórios é um aplicativo desktop desenvolvido em Python que autom
 
 O projeto foi criado com foco em automação de tarefas, boas práticas de arquitetura, multiplataforma (Linux/Windows) e entrega real de software, simulando um cenário comum em empresas: geração automática de relatórios.
 
-##########################################################################################################################################################
 
 🎯 Objetivos do Projeto
 
@@ -24,7 +23,7 @@ Geração de relatórios profissionais
 
 Empacotamento e distribuição de software
 
-##########################################################################################################################################################
+
 
 🖥️ Funcionalidades
 
@@ -46,7 +45,7 @@ Botão para abrir a pasta do relatório
 
 Compatível com Linux e Windows
 
-##########################################################################################################################################################
+
 
 🛠️ Tecnologias Utilizadas
 
@@ -62,7 +61,7 @@ ReportLab — Criação de PDFs
 
 PyInstaller — Geração de executável
 
-##########################################################################################################################################################
+
 
 📂 Estrutura do Projeto
 
@@ -79,7 +78,7 @@ robo_relatorios/
 ├── requirements.txt
 └── README.md
 
-##########################################################################################################################################################
+
 
 📄 Local de Salvamento dos Relatórios
 
@@ -92,23 +91,7 @@ Documentos/
 └── relatorios/
 └── relatorio_saucedemo.pdf
 
-##########################################################################################################################################################
 
-🎥 Demonstração
-
-📹 Vídeo de demonstração: (adicione aqui o link do vídeo)
-
-O vídeo mostra:
-
-Abertura do aplicativo
-
-Execução da automação
-
-Geração do relatório
-
-Abertura do PDF
-
-##########################################################################################################################################################
 
 🚀 Possíveis Evoluções
 
@@ -124,19 +107,18 @@ Histórico de relatórios
 
 Atualização automática
 
-##########################################################################################################################################################
 
-⬇️ Download
+## 🚀 Download do Aplicativo
 
-O aplicativo já está disponível em formato executável.
+🔹 Linux:
+- `dist/robo_relatorios`
 
-👉 Acesse:
-https://github.com/seuusuario/robo-relatorios/releases
+🔹 Windows:
+- `dist/robo_relatorios.exe`
 
-- 🪟 Windows: `robo_relatorios.exe`
-- 🐧 Linux: `robo_relatorios`
+Basta baixar o arquivo e executar.
 
-##########################################################################################################################################################
+
 
 👩‍💻 Autora
 
@@ -144,7 +126,7 @@ Ana Claudia Dzulinski
 
 Projeto desenvolvido para estudo, portfólio e demonstração de habilidades em automação com Python.
 
-##########################################################################################################################################################
+
 
 📜 Licença
 
