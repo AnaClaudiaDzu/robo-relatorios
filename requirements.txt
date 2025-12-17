@@ -1,0 +1,7 @@
+
+pyqt5>=5.15
+selenium>=4.8
+webdriver-manager>=4.0
+pandas
+matplotlib
+reportlab

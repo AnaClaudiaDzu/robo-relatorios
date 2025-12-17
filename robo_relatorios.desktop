@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Robô de Relatórios
+Comment=Automação e geração de relatórios
+Exec=/home/anadzu/Documentos/robo_relatorios/dist/robo_relatorios
+Icon=/home/anadzu/Documentos/robo_relatorios/assets/robo.png
+Terminal=false
+Type=Application
+Categories=Utility;
